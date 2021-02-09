@@ -28,7 +28,7 @@ app.get('/', (req, res)=>{
                 title: "Sidebar"
             },
             cardBody:{
-                cardImage: "../sidebar/Thumbl/1280x720.jpg",
+                cardImage: 'href="../sidebar/Thumbl/1280x720.jpg"',
                 imageAlt: "Sidebar",
                 descrip: "Uma sidebar intuitiva e moderna para seu site.",
                 hrefProject: "../sidebar"

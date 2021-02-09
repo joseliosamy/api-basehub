@@ -20,7 +20,18 @@ app.get('/', (req, res)=>{
                 cardImage: "https",
                 imageAlt: "Form Login",
                 descrip: "Um formulário com inputs no estilo da Google.",
-                hrefProject: "../projetos"
+                hrefProject: "../form-login"
+            }
+        },
+        {
+            cardHeader:{
+                title: "Sidebar"
+            },
+            cardBody:{
+                cardImage: "https",
+                imageAlt: "Sidebar",
+                descrip: "Uma sidebar intuitiva e moderna para seu site.",
+                hrefProject: "../sidebar"
             }
         }
     ])

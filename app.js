@@ -10,34 +10,21 @@ app.use((req,res,next)=>{
     next();
 })
 
-app.get('/', (req,res)=>{
+app.get('/', (req, res)=>{
     res.json([
         {
-            cardBox: {
-                cardHeader:{
-                    title: "Form Login"
-                },
-                cardBody: {
-                    image: "https",
-                    imageAlt: "Form Login",
-                    hrefProject: "../form-login"
-                }
+            cardHeader:{
+                title: "Form Login"
+            },
+            cardBody:{
+                cardImage: "https",
+                imageAlt: "Form Login",
+                descrip: "Um formulário com inputs no estilo da Google.",
+                hrefProject: "../projetos"
             }
-        },
-        {
-            cardBox: {
-                cardHeader:{
-                    title: "Form Login"
-                },
-                cardBody: {
-                    image: "https",
-                    imageAlt: "Form Login",
-                    hrefProject: "../form-login"
-                }
-            }
-        }    
-])
-}
+        }
+    ])
+})
 
 app.listen(PORT, ()=>{
     console.log('escutando a porta:' + PORT)

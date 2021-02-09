@@ -17,7 +17,7 @@ app.get('/', (req, res)=>{
                 title: "Form Login"
             },
             cardBody:{
-                cardImage: "form-login/Thumbl",
+                cardImage: "../form-login/Thumbl/1280x720.jpg",
                 imageAlt: "Form Login",
                 descrip: "Um formulário com inputs no estilo da Google.",
                 hrefProject: "../form-login"
@@ -28,7 +28,7 @@ app.get('/', (req, res)=>{
                 title: "Sidebar"
             },
             cardBody:{
-                cardImage: "sidebar/Thumbl",
+                cardImage: "../sidebar/Thumbl/1280x720.jpg",
                 imageAlt: "Sidebar",
                 descrip: "Uma sidebar intuitiva e moderna para seu site.",
                 hrefProject: "../sidebar"

@@ -11,8 +11,15 @@ app.use((req,res,next)=>{
 })
 
 app.get('/', (req,res)=>{
-    res.json({
-        card: {
+    res.json([{
+        title: "form Login"
+    }])
+})
+
+app.listen(PORT, ()=>{
+    console.log('escutando a porta:' + PORT)
+})
+/*card: {
             cardHeader:{
                 title: "Form Login"
             },
@@ -21,10 +28,4 @@ app.get('/', (req,res)=>{
                 imageAlt: "Form Login",
                 hrefProject: "../form-login"
             }
-        }
-    })
-})
-
-app.listen(PORT, ()=>{
-    console.log('escutando a porta:' + PORT)
-})
+        }*/ 

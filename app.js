@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use((req,res,next)=>{
-    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Origin",  "*");
     app.use(cors());
     next();
 })
@@ -17,10 +17,10 @@ app.get('/', (req, res)=>{
                 title: "Form Login"
             },
             cardBody:{
-                cardImage: "../form-login/Thumbl/1280x720.jpg",
+                cardImage: "form-login/Thumbl/1280x720.jpg",
                 imageAlt: "Form Login",
                 descrip: "Um formulário com inputs no estilo da Google.",
-                hrefProject: "../form-login"
+                hrefProject: "form-login"
             }
         },
         {
@@ -28,10 +28,10 @@ app.get('/', (req, res)=>{
                 title: "Sidebar"
             },
             cardBody:{
-                cardImage: "../sidebar/Thumbl/1280x720.jpg",
+                cardImage: "sidebar/Thumbl/1280x720.jpg",
                 imageAlt: "Sidebar",
                 descrip: "Uma sidebar intuitiva e moderna para seu site.",
-                hrefProject: "../sidebar"
+                hrefProject: "sidebar"
             }
         }
     ])
